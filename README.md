@@ -1,6 +1,7 @@
 # Image_Video_Preprocessing_WebApplication_using_OpenCV
 
-<img width="625" height="365" alt="image" src="https://github.com/user-attachments/assets/c99f8b84-3bfb-4ab8-b16c-225e1195b2cb" />
+<img width="1200" height="514" alt="image" src="https://github.com/user-attachments/assets/8f7f2d8c-9582-4e92-827d-7a7a5780bbfa" />
+
 
 # Project Overview
   A comprehensive web-based image and video processing application built with Flask, OpenCV, and modern web technologies. The tool provides browser-based editing and analysis capabilities for both images and videos with a user-friendly interface.
@@ -30,7 +31,8 @@
 
 # Core Image Processing Techniques Implemented
 ## 1. Image Blending & Composition
-<img width="627" height="338" alt="image" src="https://github.com/user-attachments/assets/636b7394-1057-48f5-864c-37f90b55296e" />
+<img width="645" height="743" alt="image" src="https://github.com/user-attachments/assets/84461548-4c94-43ef-bf1d-d01f8d7c27ba" />
+
 
   Equal Weight Blending: cv2.addWeighted(img1, 0.5, img2, 0.5, 0)
   
@@ -39,14 +41,16 @@
   Automatic Resizing: Images are resized to match dimensions before blending
 
 ## 2. Geometric Transformations
-<img width="623" height="482" alt="image" src="https://github.com/user-attachments/assets/e63df1b5-fc5a-4200-a002-5abdf45015c4" />
+<img width="968" height="741" alt="image" src="https://github.com/user-attachments/assets/ff8d6422-a7c0-49fb-91df-d7492a255848" />
+
 
   Image Resizing: cv2.resize() with user-defined width and height
   
   Aspect Ratio Handling: Maintains proportions during reshaping operations
 
 ## 3. Region of Interest (ROI) Operations
-<img width="601" height="297" alt="image" src="https://github.com/user-attachments/assets/7feae9f4-ba89-46b0-b2c1-bf4bb8fd80fc" />
+<img width="776" height="663" alt="image" src="https://github.com/user-attachments/assets/4cb3ae21-d92d-40de-8dd1-a89ae5f4eec5" />
+<img width="697" height="600" alt="image" src="https://github.com/user-attachments/assets/db256ee4-0f9a-4069-8aff-04f8e644ed71" />
 
   Rectangular ROI Extraction: img_cv[y:y+height, x:x+width]
   
@@ -55,8 +59,10 @@
   Coordinate-based Extraction: Precise pixel-level region extraction
 
 ## 4. Computer Vision Drawing Operations
-<img width="939" height="665" alt="image" src="https://github.com/user-attachments/assets/985c3bf4-4911-416b-8d4f-911e38849d3c" />
-
+<img width="926" height="618" alt="image" src="https://github.com/user-attachments/assets/58ac237e-25cd-4ee4-ab8e-5f9c6aa9b681" />
+<img width="830" height="587" alt="image" src="https://github.com/user-attachments/assets/435daf0c-7915-4c73-8d76-3db14968794a" />
+<img width="829" height="618" alt="image" src="https://github.com/user-attachments/assets/1751daef-a0a6-4a76-ac19-4e360d99129e" />
+<img width="835" height="648" alt="image" src="https://github.com/user-attachments/assets/bf1bddeb-550a-4567-a514-240d6cfcdcda" />
   Primitive Shapes:
   
   Lines: cv2.line()
@@ -70,7 +76,8 @@
   Customizable Properties: Color, thickness, position parameters
 
 ## 5. Text & Annotation Features
-<img width="555" height="502" alt="image" src="https://github.com/user-attachments/assets/3ea95311-a5bb-4533-a3bc-8842ec6e404e" />
+<img width="670" height="733" alt="image" src="https://github.com/user-attachments/assets/6cd75924-98a9-4ff3-bdae-53645845f55e" />
+<img width="961" height="680" alt="image" src="https://github.com/user-attachments/assets/7b251ee8-e556-49a1-897f-b395f564d4a7" />
 
   Text Overlay: cv2.putText() with customizable fonts and positioning
   
@@ -79,7 +86,7 @@
   Font Control: Size, color, thickness, and position customization
 
 ## 6. Face Detection System
-<img width="581" height="314" alt="image" src="https://github.com/user-attachments/assets/e3b446a5-e1d7-4bd5-876b-006093019804" />
+<img width="901" height="530" alt="image" src="https://github.com/user-attachments/assets/9ab6b927-4fea-4e66-ba18-fa910b94deef" />
 
   Haar Cascade Classifiers: cv2.CascadeClassifier()
   
@@ -91,7 +98,7 @@
 
 ## 7. Feature Detection Algorithms
   Edge Detection:
-  <img width="776" height="462" alt="image" src="https://github.com/user-attachments/assets/978e99e2-d766-43ee-a95c-71c6cf355b74" />
+<img width="578" height="719" alt="image" src="https://github.com/user-attachments/assets/5f4299b6-0b93-4b53-85af-d60aa87b5067" />
 
   Canny Edge Detector: cv2.Canny()
   
@@ -106,6 +113,10 @@
   Adaptive thresholding for corner identification
 
 ## 8. Video Processing Capabilities
+<img width="1086" height="584" alt="image" src="https://github.com/user-attachments/assets/43649cab-7122-48e3-857c-76dae6c33175" />
+
+<img width="1031" height="453" alt="image" src="https://github.com/user-attachments/assets/c7b9d0e6-d197-47ce-a352-c6f53677da23" />
+
   Frame Extraction: Capture and process individual video frames
   
   Temporal Analysis: Frame counting and timestamp overlay
@@ -126,8 +137,6 @@
 
 
 # Video Processing Engine
-<img width="666" height="410" alt="image" src="https://github.com/user-attachments/assets/d49e674e-4033-4637-85b9-b45740a746d9" />
-
   Frame Rate Maintenance: Consistent FPS throughout processing
   
   Resource Cleanup: Proper release of video capture and writer objects
