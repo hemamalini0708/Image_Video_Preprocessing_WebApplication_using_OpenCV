@@ -1,13 +1,15 @@
-# Image_Video_Preprocessing_WebApplication_using_OpenCV
+# **Image_Video_Preprocessing_WebApplication_using_OpenCV**
 
-<img width="1200" height="514" alt="image" src="https://github.com/user-attachments/assets/8f7f2d8c-9582-4e92-827d-7a7a5780bbfa" />
+   <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/8f7f2d8c-9582-4e92-827d-7a7a5780bbfa" />
 
 
-# Project Overview
+# **Project Overview**
+
   A comprehensive web-based image and video processing application built with Flask, OpenCV, and modern web technologies. The tool provides browser-based editing and analysis capabilities for both images and videos with a user-friendly interface.
 
-# Technical Stack
-## Backend Technologies
+# **Technical Stack**
+
+ **Backend Technologies**
   Python Flask - Web framework for API endpoints
   
   OpenCV (cv2) - Core image/video processing library
@@ -18,7 +20,7 @@
   
   Tempfile - Temporary file management for video processing
 
-# Frontend Technologies
+# **Frontend Technologies**
   HTML5 - Semantic structure with modern elements
   
   CSS3 - Advanced styling with gradients, animations, and responsive design
@@ -29,9 +31,9 @@
   
   Font Awesome - Icon library for UI elements
 
-# Core Image Processing Techniques Implemented
-## 1. Image Blending & Composition
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/84461548-4c94-43ef-bf1d-d01f8d7c27ba" />
+# **Core Image Processing Techniques Implemented**
+# 1. **Image Blending & Composition**
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/84461548-4c94-43ef-bf1d-d01f8d7c27ba" />
 
 
   Equal Weight Blending: cv2.addWeighted(img1, 0.5, img2, 0.5, 0)
@@ -40,17 +42,17 @@
   
   Automatic Resizing: Images are resized to match dimensions before blending
 
-## 2. Geometric Transformations
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/ff8d6422-a7c0-49fb-91df-d7492a255848" />
+# **2. Geometric Transformations**
+<img width="400" height="150" alt="image" src="https://github.com/user-attachments/assets/ff8d6422-a7c0-49fb-91df-d7492a255848" />
 
 
   Image Resizing: cv2.resize() with user-defined width and height
   
   Aspect Ratio Handling: Maintains proportions during reshaping operations
 
-## 3. Region of Interest (ROI) Operations
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/4cb3ae21-d92d-40de-8dd1-a89ae5f4eec5" />
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/db256ee4-0f9a-4069-8aff-04f8e644ed71" />
+# 3. **Region of Interest (ROI) Operations**
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/4cb3ae21-d92d-40de-8dd1-a89ae5f4eec5" />
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/db256ee4-0f9a-4069-8aff-04f8e644ed71" />
 
   Rectangular ROI Extraction: img_cv[y:y+height, x:x+width]
   
@@ -58,11 +60,11 @@
   
   Coordinate-based Extraction: Precise pixel-level region extraction
 
-## 4. Computer Vision Drawing Operations
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/58ac237e-25cd-4ee4-ab8e-5f9c6aa9b681" />
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/435daf0c-7915-4c73-8d76-3db14968794a" />
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/1751daef-a0a6-4a76-ac19-4e360d99129e" />
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/bf1bddeb-550a-4567-a514-240d6cfcdcda" />
+# 4. **Computer Vision Drawing Operations**
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/58ac237e-25cd-4ee4-ab8e-5f9c6aa9b681" />
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/435daf0c-7915-4c73-8d76-3db14968794a" />
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/1751daef-a0a6-4a76-ac19-4e360d99129e" />
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/bf1bddeb-550a-4567-a514-240d6cfcdcda" />
   Primitive Shapes:
   
   Lines: cv2.line()
@@ -75,9 +77,9 @@
   
   Customizable Properties: Color, thickness, position parameters
 
-## 5. Text & Annotation Features
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/6cd75924-98a9-4ff3-bdae-53645845f55e" />
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/7b251ee8-e556-49a1-897f-b395f564d4a7" />
+# 5. **Text & Annotation Features**
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/6cd75924-98a9-4ff3-bdae-53645845f55e" />
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/7b251ee8-e556-49a1-897f-b395f564d4a7" />
 
   Text Overlay: cv2.putText() with customizable fonts and positioning
   
@@ -85,8 +87,8 @@
   
   Font Control: Size, color, thickness, and position customization
 
-## 6. Face Detection System
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/9ab6b927-4fea-4e66-ba18-fa910b94deef" />
+# 6. **Face Detection System**
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/9ab6b927-4fea-4e66-ba18-fa910b94deef" />
 
   Haar Cascade Classifiers: cv2.CascadeClassifier()
   
@@ -96,9 +98,9 @@
   
   Bounding Box Visualization: Customizable rectangle color and thickness
 
-## 7. Feature Detection Algorithms
+# 7. **Feature Detection Algorithms**
   Edge Detection:
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/5f4299b6-0b93-4b53-85af-d60aa87b5067" />
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/5f4299b6-0b93-4b53-85af-d60aa87b5067" />
 
   Canny Edge Detector: cv2.Canny()
   
@@ -112,10 +114,10 @@
   
   Adaptive thresholding for corner identification
 
-## 8. Video Processing Capabilities
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/43649cab-7122-48e3-857c-76dae6c33175" />
+# 8. **Video Processing Capabilities**
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/43649cab-7122-48e3-857c-76dae6c33175" />
 
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/c7b9d0e6-d197-47ce-a352-c6f53677da23" />
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/c7b9d0e6-d197-47ce-a352-c6f53677da23" />
 
   Frame Extraction: Capture and process individual video frames
   
@@ -125,8 +127,8 @@
   
   Real-time Processing: Continuous frame processing with OpenCV VideoWriter
 
-# Advanced Technical Features
-## Image Processing Pipeline
+# **Advanced Technical Features**
+# **Image Processing Pipeline**
   Input Validation: Secure file upload with type and size restrictions
   
   Memory Management: Efficient NumPy array handling for large images
@@ -136,7 +138,7 @@
   Pre-processing: Gaussian blur for noise reduction in edge detection
 
 
-# Video Processing Engine
+# **Video Processing Engine**
   Frame Rate Maintenance: Consistent FPS throughout processing
   
   Resource Cleanup: Proper release of video capture and writer objects
@@ -145,7 +147,7 @@
   
   Progress Tracking: Frame-by-frame processing with completion metrics
 
-# Client-Server Architecture
+# **Client-Server Architecture**
   RESTful API Design: Clean endpoint structure for each processing operation
   
   Binary Data Handling: Efficient image/video transmission via byte streams
@@ -154,7 +156,7 @@
   
   CORS Management: Proper cross-origin resource sharing configuration
 
-## Performance Optimizations
+# **Performance Optimizations**
   Memory Efficiency
   Stream Processing: Chunk-based file handling for large videos
   
@@ -162,14 +164,14 @@
   
   Buffer Management: IO buffer optimization for image
 
-## Processing Optimizations
+# **Processing Optimizations**
   Multi-threading Ready: Architecture supports parallel processing
   
   GPU Acceleration: OpenCV configurations for hardware acceleration
   
   Cache Management: Efficient temporary file and result caching
 
-## Security Features
+# **Security Features**
   File Upload Security: Secure filename handling and type validation
   
   Size Limitations: 200MB maximum file size protection
@@ -178,7 +180,7 @@
   
   Resource Limits: Processing timeout and memory limit enforcement
 
-## User Interface Features
+# **User Interface Features**
   Interactive Controls
   Real-time Previews: Instant visual feedback for all operations
   
@@ -195,7 +197,7 @@
   
   Progressive Enhancement: Graceful degradation for older browsers
 
-# Deployment & Configuration
+# **Deployment & Configuration**
   Environment Requirements
   Python 3.7+ with OpenCV 4.5+
   
@@ -214,7 +216,7 @@
   
   Quality settings for video encoding
 
-# Workflow Integration
+# **Workflow Integration**
   The application supports complete processing workflows:
   
   Upload → Process → Preview → Download
@@ -228,7 +230,7 @@
 This comprehensive toolbox demonstrates professional-grade computer vision implementation with production-ready 
 features for educational, research, and practical image/video processing applications.
 
-# References 
+# **References **
   The following resources were used throughout the design, development, and testing of 
   the Flask Image & Video Processing Application: 
   1. Flask Documentation – Official Flask documentation for web framework 
