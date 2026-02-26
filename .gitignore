@@ -1,0 +1,43 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# PyCharm IDE
+.idea/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Logs
+logs/
+*.log
+
+# Model files (optional - uncomment if too large for GitHub)
+# models/*.pkl
+# models/*.h5
+
+# Data files (optional - uncomment if too large)
+# data/*.csv
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Distribution / build
+dist/
+build/
+*.egg-info/
+
+# Byte-compiled files
+*.pyc
