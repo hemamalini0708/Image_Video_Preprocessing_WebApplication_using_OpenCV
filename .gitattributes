@@ -1,0 +1,8 @@
+# Exclude HTML/CSS/JS templates from language stats
+templates/ linguist-vendored=true
+static/ linguist-vendored=true
+
+# Force detect these languages
+*.py linguist-detectable=true
+*.js linguist-detectable=true
+*.css linguist-detectable=true
