@@ -1,267 +1,236 @@
 # **Image_Video_Preprocessing_WebApplication_using_OpenCV**
 
-   <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/8f7f2d8c-9582-4e92-827d-7a7a5780bbfa" />
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
+A full-stack Image and Video Processing Web Application built using Flask and OpenCV.
+The system enables real-time image manipulation, computer vision operations, and video processing through an interactive browser-based interface.
 
-# **Project Overview**
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/8f7f2d8c-9582-4e92-827d-7a7a5780bbfa" />
 
-  A comprehensive web-based image and video processing application built with Flask, OpenCV, and modern web technologies. The tool provides browser-based editing and analysis capabilities for both images and videos with a user-friendly interface.
+---
 
-# **Technical Stack**
+## **Project Overview**
 
- **Backend Technologies**
-  Python Flask - Web framework for API endpoints
-  
-  OpenCV (cv2) - Core image/video processing library
-  
-  NumPy - Numerical operations for image data manipulation
-  
-  Werkzeug - File upload handling and security
-  
-  Tempfile - Temporary file management for video processing
+This project implements a complete computer vision processing pipeline that:
 
-# **Frontend Technologies**
-  HTML5 - Semantic structure with modern elements
-  
-  CSS3 - Advanced styling with gradients, animations, and responsive design
-  
-  JavaScript (ES6+) - Client-side interactivity and OpenCV.js integration
-  
-  Canvas API - Client-side image manipulation and drawing
-  
-  Font Awesome - Icon library for UI elements
+- Performs image preprocessing and transformations
+- Supports real-time face detection (image & video)
+- Provides interactive drawing and annotation tools
+- Enables ROI extraction and edge detection
+- Processes video frames with OpenCV
+- Follows secure file handling and modular backend design
 
-# **Core Image Processing Techniques Implemented**
-# 1. **Image Blending & Composition**
+The application demonstrates production-ready CV workflow from upload → processing → preview → download.
+
+---
+
+## **Objective**
+
+To design and deploy a scalable web-based computer vision system that:
+
+- Accepts image and video uploads
+- Performs multiple OpenCV operations dynamically
+- Allows real-time parameter customization
+- Displays processed results instantly
+- Maintains clean backend architecture with logging
+
+---
+
+## **Core Features**
+
+### 1️⃣ Image Blending & Composition
+
+- Equal blending using `cv2.addWeighted()`
+- Adjustable weighted blending
+- Automatic resizing before blending
+- 
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/84461548-4c94-43ef-bf1d-d01f8d7c27ba" />
 
+### 2️⃣ Image Reshaping
 
-  Equal Weight Blending: cv2.addWeighted(img1, 0.5, img2, 0.5, 0)
-  
-  Weighted Blending: Adjustable alpha blending with user-controlled weights
-  
-  Automatic Resizing: Images are resized to match dimensions before blending
-
-# **2. Geometric Transformations**
+- Custom width & height resizing using `cv2.resize()`
+- Aspect ratio handling
+ 
 <img width="400" height="150" alt="image" src="https://github.com/user-attachments/assets/ff8d6422-a7c0-49fb-91df-d7492a255848" />
 
+### 3️⃣ Region of Interest (ROI)
 
-  Image Resizing: cv2.resize() with user-defined width and height
-  
-  Aspect Ratio Handling: Maintains proportions during reshaping operations
+- Coordinate-based ROI extraction
+- Interactive canvas-based ROI selection
+- Pixel-level slicing operations
 
-# 3. **Region of Interest (ROI) Operations**
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/4cb3ae21-d92d-40de-8dd1-a89ae5f4eec5" />
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/db256ee4-0f9a-4069-8aff-04f8e644ed71" />
 
-  Rectangular ROI Extraction: img_cv[y:y+height, x:x+width]
-  
-  Interactive Selection: Canvas-based ROI selection with mouse interactions
-  
-  Coordinate-based Extraction: Precise pixel-level region extraction
+### 4️⃣ Geometric Drawing Operations
 
-# 4. **Computer Vision Drawing Operations**
+- Line → `cv2.line()`
+- Rectangle → `cv2.rectangle()`
+- Circle → `cv2.circle()`
+- Arrow → `cv2.arrowedLine()`
+- Customizable color, thickness, and coordinates
+  
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/58ac237e-25cd-4ee4-ab8e-5f9c6aa9b681" />
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/435daf0c-7915-4c73-8d76-3db14968794a" />
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/1751daef-a0a6-4a76-ac19-4e360d99129e" />
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/bf1bddeb-550a-4567-a514-240d6cfcdcda" />
-  Primitive Shapes:
-  
-  Lines: cv2.line()
-  
-  Rectangles: cv2.rectangle()
-  
-  Circles: cv2.circle()
-  
-  Arrows: cv2.arrowedLine()
-  
-  Customizable Properties: Color, thickness, position parameters
 
-# 5. **Text & Annotation Features**
+
+### 5️⃣ Text & Date-Time Overlay
+
+- Text addition using `cv2.putText()`
+- Dynamic timestamp insertion
+- Custom font size, color, and positioning
+
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/6cd75924-98a9-4ff3-bdae-53645845f55e" />
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/7b251ee8-e556-49a1-897f-b395f564d4a7" />
 
-  Text Overlay: cv2.putText() with customizable fonts and positioning
-  
-  DateTime Stamping: Automatic timestamp addition with multiple format options
-  
-  Font Control: Size, color, thickness, and position customization
+### 6️⃣ Face Detection (Image & Video)
 
-# 6. **Face Detection System**
+- Haar Cascade Classifier
+- `detectMultiScale()` implementation
+- Real-time video face detection
+- Bounding box customization
+
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/9ab6b927-4fea-4e66-ba18-fa910b94deef" />
 
-  Haar Cascade Classifiers: cv2.CascadeClassifier()
-  
-  Multi-scale Detection: detectMultiScale() with scale factor and minimum neighbors
-  
-  Real-time Video Processing: Frame-by-frame face detection in videos
-  
-  Bounding Box Visualization: Customizable rectangle color and thickness
+### 7️⃣ Edge Detection
 
-# 7. **Feature Detection Algorithms**
-  Edge Detection:
+- Canny Edge Detection → `cv2.Canny()`
+- Sobel Operator
+- Laplacian Operator
+- Optional Gaussian Blur preprocessing
+
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/5f4299b6-0b93-4b53-85af-d60aa87b5067" />
 
-  Canny Edge Detector: cv2.Canny()
-  
-  Sobel Operator: cv2.Sobel() for gradient-based edge detection
-  
-  Laplacian Operator: cv2.Laplacian() for second-derivative edge detection
-  
-  Corner Detection:
-  
-  Harris Corner Detection: cv2.cornerHarris()
-  
-  Adaptive thresholding for corner identification
+### 8️⃣ Video Processing Engine
 
-# 8. **Video Processing Capabilities**
+- Frame-by-frame processing
+- VideoWriter integration
+- FPS maintenance
+- Automatic resource cleanup
+
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/43649cab-7122-48e3-857c-76dae6c33175" />
 
 <img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/c7b9d0e6-d197-47ce-a352-c6f53677da23" />
 
-  Frame Extraction: Capture and process individual video frames
-  
-  Temporal Analysis: Frame counting and timestamp overlay
-  
-  Video Compression: MP4 encoding with controlled quality settings
-  
-  Real-time Processing: Continuous frame processing with OpenCV VideoWriter
+---
 
-# **Advanced Technical Features**
-# **Image Processing Pipeline**
-  Input Validation: Secure file upload with type and size restrictions
-  
-  Memory Management: Efficient NumPy array handling for large images
-  
-  Color Space Conversions: BGR/RGB conversions and grayscale processing
-  
-  Pre-processing: Gaussian blur for noise reduction in edge detection
+## **Technical Stack**
 
+### Backend
 
-# **Video Processing Engine**
-  Frame Rate Maintenance: Consistent FPS throughout processing
-  
-  Resource Cleanup: Proper release of video capture and writer objects
-  
-  Temporary File Management: Secure handling of large video files
-  
-  Progress Tracking: Frame-by-frame processing with completion metrics
+- Python
+- Flask
+- OpenCV (cv2)
+- NumPy
+- Werkzeug
 
-# **Client-Server Architecture**
-  RESTful API Design: Clean endpoint structure for each processing operation
-  
-  Binary Data Handling: Efficient image/video transmission via byte streams
-  
-  Error Handling: Comprehensive exception handling and user feedback
-  
-  CORS Management: Proper cross-origin resource sharing configuration
+### Frontend
 
-# **Performance Optimizations**
-  Memory Efficiency
-  Stream Processing: Chunk-based file handling for large videos
-  
-  Garbage Collection: Automatic cleanup of OpenCV objects
-  
-  Buffer Management: IO buffer optimization for image
+- HTML5
+- CSS3 (Responsive Design)
+- JavaScript (ES6+)
+- Canvas API
+- OpenCV.js
 
-# **Processing Optimizations**
-  Multi-threading Ready: Architecture supports parallel processing
-  
-  GPU Acceleration: OpenCV configurations for hardware acceleration
-  
-  Cache Management: Efficient temporary file and result caching
+---
 
-# **Security Features**
-  File Upload Security: Secure filename handling and type validation
-  
-  Size Limitations: 200MB maximum file size protection
-  
-  Input Sanitization: Protection against path traversal attacks
-  
-  Resource Limits: Processing timeout and memory limit enforcement
+## **Architecture Highlights**
 
-# **User Interface Features**
-  Interactive Controls
-  Real-time Previews: Instant visual feedback for all operations
-  
-  Parameter Adjustment: Live sliders and input controls
-  
-  Drag & Drop ROI: Mouse-based region selection
-  
-  Visual Feedback: Animated transitions and status indicators
+- REST-based endpoint design
+- Modular image processor class structure
+- Structured logging system
+- Secure file upload handling
+- 200MB upload limit protection
+- Exception handling for robustness
 
-  Responsive Design
-  Mobile Compatibility: Adaptive layout for various screen sizes
-  
-  Touch Support: Gesture-based controls for mobile devices
-  
-  Progressive Enhancement: Graceful degradation for older browsers
+---
 
-# **Deployment & Configuration**
-  Environment Requirements
-  Python 3.7+ with OpenCV 4.5+
-  
-  Flask 2.0+ for web server functionality
-  
-  Modern Browser with Canvas and File API support
-  
-  Adequate Memory for large file processing
-  
-  Configuration Options
-  Upload and output directory customization
-  
-  Maximum file size adjustments
-  
-  Processing timeout configurations
-  
-  Quality settings for video encoding
+## **Project Structure**
+```
+Image_Video_Preprocessing_WebApplication_using_OpenCV/
+│
+├── app.py
+├── image_processor.py
+├── log_file.py
+├── README.md
+│
+├── Face_detection/
+│
+├── static/
+│
+└── templates/
+    └── index.html
+```
 
-# **Workflow Integration**
-  The application supports complete processing workflows:
-  
-  Upload → Process → Preview → Download
-  
-  Batch Operations: Multiple images with consistent parameters
-  
-  Pipeline Processing: Sequential operations on single files
-  
-  Comparative Analysis: Side-by-side result comparisons
+---
 
-This comprehensive toolbox demonstrates professional-grade computer vision implementation with production-ready 
-features for educational, research, and practical image/video processing applications.
+## **Processing Workflow**
 
-# **References **
-  The following resources were used throughout the design, development, and testing of 
-  the Flask Image & Video Processing Application: 
-  1. Flask Documentation – Official Flask documentation for web framework 
-  features, routing, and server-side handling. 
-  https://flask.palletsprojects.com/ 
-  2. OpenCV Documentation – For image and video processing techniques including 
-  face detection, edge detection, image blending, and video frame handling. 
-  https://docs.opencv.org/ 
-  3. Python Official Documentation – For Python programming references, file 
-  handling, and integration with Flask and OpenCV. 
-  https://docs.python.org/3/ 
-  4. Stack Overflow – For practical coding solutions, debugging techniques, and 
-  integration tips for Python, Flask, and OpenCV. 
-  https://stackoverflow.com/ 
-  5. W3Schools – For front-end development guidance including HTML, CSS, 
-  JavaScript, and responsive web design techniques. 
-  https://www.w3schools.com/ 
-  6. TutorialsPoint – Reference for Python, Flask, and OpenCV tutorials, examples, 
-  and best practices. 
-  https://www.tutorialspoint.com/ 
-  7. GitHub Repositories – Public repositories for example projects related to web
-  based image and video processing using Flask and OpenCV. 
-  https://github.com/ 
-  94 
-   
-  8. Haar cascades - are a technique used in computer vision to detect objects in 
-  images or video, most famously faces 
-  https://github.com/opencv/opencv/tree/master/data/haarcascades 
-  9. Font Awesome:  Used for integrating icons into the application’s UI. 
-  https://fontawesome.com 
-  10. Google Fonts – Used for consistent typography styling across the application. 
-  https://fonts.google.com/  
-  11. Research Papers & Articles – Online papers and articles for advanced 
-  techniques in computer vision, face detection, and video analytics. 
+Upload → Select Technique → Adjust Parameters → Process → Preview → Download
+
+Supports single-step and sequential processing operations.
+
+---
+
+## **Performance & Optimization**
+
+- Efficient NumPy array handling
+- Proper memory cleanup
+- Frame-level video processing
+- Structured logging for debugging
+- Scalable architecture for multi-threading
+
+---
+
+## **Security Features**
+
+- Secure filename handling
+- File type validation
+- Upload size restriction
+- Controlled directory access
+- Error handling with user feedback
+
+---
+
+## **Run Locally**
+```
+pip install -r requirements.txt
+python app.py
+```
+
+Open in browser:
+```
+http://localhost:5000
+```
+
+---
+
+## **Future Improvements**
+
+- Cloud deployment (AWS / Render / Heroku)
+- Deep learning–based face detection
+- Batch image processing
+- GPU acceleration support
+
+---
+
+## **Author**
+
+**Hema Malini Gangumalla**
+Aspiring Data Scientist
+
+📧 [hemamalinig07@gmail.com](mailto:hemamalinig07@gmail.com)
+
+---
+
+## **License**
+
+MIT License
